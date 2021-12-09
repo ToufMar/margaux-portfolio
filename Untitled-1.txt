@@ -1,0 +1,17 @@
+//CAROUSEL OPEN
+
+//etape 1 -> peut afficher les cartes
+//etape 2 -> affice les carte (supprime le header (ou avant))
+
+CAROUSEL CLOSE
+
+//etape 1 -> a recupéré les coordonées
+//etape 2 -> anime
+//etape 3 / 4 -> fade out / monte le carousel
+
+carouselState: {
+    transitionState: "start" | "end" | "transiting?"
+    display: true / false
+}
+
+

@@ -1,0 +1,20 @@
+.page {
+    position: relative;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    width: 100%;
+    top: 100px;
+
+    .video-container {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+        justify-content: center;
+
+        .video-component {
+            width: 45%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.parallax-effect-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: perspective(3000px);
+    position: relative;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+
+    .inner-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-style: italic;
+        width: 50%;
+        // transform: translateZ(80px) scale(1);
+        > img {
+            transition: 2.5s ease-in-out;
+            transform: scale(0.2);
+            
+            &.logo_axa {
+                transform: scale(0.6);
+            }
+            
+            &.logo_detours {
+                transform: scale(0.6);
+            }
+            &.logo_gonzai {
+                transform: scale(0.6);
+            }
+            &.logo_netflix {
+                transform: scale(0.7);
+            }
+            &.big {
+                transform: scale(0.6);
+                
+                &.logo_netflix {
+                    transform: scale(1.5);
+                }
+                &.logo_axa {
+                    transform: scale(1.5);
+                }
+                &.logo_detours {
+                    transform: scale(1.6);
+                }
+                &.logo_gonzai {
+                    transform: scale(1.5);
+                }
+            }
+        }
+        > p {
+            font-size: 12px;
+            color: red;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    position: fixed;
+    z-index: 4;
+    transition: 0.7s ease-in-out;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #ecdeb6;
+
+    &.color-white {
+        transition: 1s ease-in-out;
+        color: white;
+    }
+
+    p {
+        transition: 0.7s ease-in-out;
+        color: black;
+        &.color-white {
+            transition: 1s ease-in-out;
+            color: white;
+        }
+    }
+
+    .logo {
+        background-image: url("../../static/img/logo.png");
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 4;
+    }
+    h2 {
+        z-index: 4;
+    }
+}

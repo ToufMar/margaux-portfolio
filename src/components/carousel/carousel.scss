@@ -1,0 +1,73 @@
+.carousel-container {
+    height: calc(100vh - 150px);
+
+    .carousel {
+        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
+        transition: all 0.5s ease-in-out;
+
+        &.scale-on {
+            transform: scale(0.7);
+        }
+
+        /* CARD */
+        .Card {
+            height: 500px;
+            width: 700px;
+            transition: all 0.5s ease 1s;
+        }
+
+        /* CARD TRANSITIONS */
+        .present {
+            z-index: 1;
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .next {
+            position: absolute;
+            transform: translateX(50vw);
+            height: 300px;
+            width: 500px;
+            visibility: visible;
+        }
+
+        .previous {
+            transform: translateX(-50vw);
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            visibility: visible;
+        }
+
+        .less-index-0 {
+            z-index: 0;
+            opacity: 0;
+        }
+        .less-index-1 {
+            z-index: 1;
+            opacity: 1;
+        }
+    }
+}
+.pagination-container {
+    position: relative;
+    z-index: 5;
+    top: calc(50% - 50px);
+    display: flex;
+    align-items: center;
+    > svg {
+        position: absolute;
+        top: 1%;
+        &.btn-previous {
+            right: 19%;
+        }
+        
+        &.btn-next {
+            transform: rotate(180deg);
+            left: 19%;
+        }
+    }
+}
